@@ -9,6 +9,9 @@
 #include "SDL2/SDL.h"
 #include "SDLGameObject.h"
 #include "InputHandler.h"
+#include "PlayState.h"
+#include "MenuState.h"
+#include "GameStateMachine.h"
 #include <iostream>
 #include <vector>
 
@@ -43,10 +46,12 @@ private:
 	SDL_Window* myWindow;
 	SDL_Surface* mySurface;
         SDL_Renderer* myRenderer;
+        GameStateMachine* myGameStateMachine;
 
 	bool myRunning;
 	static Game* myInstance;
 	std::vector<GameObject*> myGameObjectList;
+        
 };
 
 typedef Game MyGame;

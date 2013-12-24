@@ -36,7 +36,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Game.o \
+	${OBJECTDIR}/GameStateMachine.o \
 	${OBJECTDIR}/InputHandler.o \
+	${OBJECTDIR}/MenuState.o \
+	${OBJECTDIR}/PlayState.o \
 	${OBJECTDIR}/SDLGameObject.o \
 	${OBJECTDIR}/TextureManager.o \
 	${OBJECTDIR}/main.o
@@ -71,10 +74,25 @@ ${OBJECTDIR}/Game.o: Game.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Game.o Game.cpp
 
+${OBJECTDIR}/GameStateMachine.o: GameStateMachine.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/GameStateMachine.o GameStateMachine.cpp
+
 ${OBJECTDIR}/InputHandler.o: InputHandler.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/InputHandler.o InputHandler.cpp
+
+${OBJECTDIR}/MenuState.o: MenuState.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/MenuState.o MenuState.cpp
+
+${OBJECTDIR}/PlayState.o: PlayState.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/PlayState.o PlayState.cpp
 
 ${OBJECTDIR}/SDLGameObject.o: SDLGameObject.cpp 
 	${MKDIR} -p ${OBJECTDIR}

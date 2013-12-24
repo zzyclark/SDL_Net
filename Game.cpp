@@ -48,6 +48,8 @@ bool Game::init(const char* title, int xpos, int ypos, int height, int width, bo
 				{
 					return false;
 				}
+                                myGameStateMachine = new GameStateMachine();
+                                myGameStateMachine->changeState(new MenuState());
 				myGameObjectList.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
 				myGameObjectList.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
 			}else{
@@ -96,6 +98,10 @@ void Game::update()
 void Game::handleEvents()
 {
 	MyInputHandler::Instance()->update();
+        if (MyInputHandler::Instance()->isKeyDown(SDL_SCANCODE_RETURN)) 
+        {
+            myGameStateMachine->changeState(new PlayState());
+        }
 }
 
 void Game::clean()

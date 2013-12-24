@@ -6,8 +6,12 @@
                    projectFiles="true">
       <itemPath>Game.h</itemPath>
       <itemPath>GameObject.h</itemPath>
+      <itemPath>GameState.h</itemPath>
+      <itemPath>GameStateMachine.h</itemPath>
       <itemPath>InputHandler.h</itemPath>
       <itemPath>LoaderParams.h</itemPath>
+      <itemPath>MenuState.h</itemPath>
+      <itemPath>PlayState.h</itemPath>
       <itemPath>SDLGameObject.h</itemPath>
       <itemPath>TextureManager.h</itemPath>
       <itemPath>Vector2D.h</itemPath>
@@ -20,7 +24,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Game.cpp</itemPath>
+      <itemPath>GameStateMachine.cpp</itemPath>
       <itemPath>InputHandler.cpp</itemPath>
+      <itemPath>MenuState.cpp</itemPath>
+      <itemPath>PlayState.cpp</itemPath>
       <itemPath>SDLGameObject.cpp</itemPath>
       <itemPath>TextureManager.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -59,11 +66,25 @@
       </item>
       <item path="GameObject.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="GameState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GameStateMachine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameStateMachine.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="InputHandler.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="InputHandler.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="LoaderParams.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MenuState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MenuState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PlayState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PlayState.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="SDLGameObject.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -110,11 +131,25 @@
       </item>
       <item path="GameObject.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="GameState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GameStateMachine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameStateMachine.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="InputHandler.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="InputHandler.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="LoaderParams.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MenuState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MenuState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PlayState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PlayState.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="SDLGameObject.cpp" ex="false" tool="1" flavor2="0">
       </item>

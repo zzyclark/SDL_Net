@@ -40,6 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/InputHandler.o \
 	${OBJECTDIR}/MenuButton.o \
 	${OBJECTDIR}/MenuState.o \
+	${OBJECTDIR}/PauseState.o \
 	${OBJECTDIR}/PlayState.o \
 	${OBJECTDIR}/SDLGameObject.o \
 	${OBJECTDIR}/TextureManager.o \
@@ -94,6 +95,11 @@ ${OBJECTDIR}/MenuState.o: MenuState.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MenuState.o MenuState.cpp
+
+${OBJECTDIR}/PauseState.o: PauseState.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PauseState.o PauseState.cpp
 
 ${OBJECTDIR}/PlayState.o: PlayState.cpp 
 	${MKDIR} -p ${OBJECTDIR}

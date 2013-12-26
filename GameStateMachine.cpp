@@ -37,13 +37,12 @@ void GameStateMachine::changeState(GameState* pState)
 
 		if(myGameSates.back()->onExit())
 		{
-			delete myGameSates.back();
-			myGameSates.pop_back();
+                        //delete myGameSates.back();
+                        myGameSates.pop_back();
 		}
 	}
-
+        pState->onEnter();
 	myGameSates.push_back(pState);
-	myGameSates.back()->onEnter();
 }
 
 void GameStateMachine::update()

@@ -50,8 +50,8 @@ bool Game::init(const char* title, int xpos, int ypos, int height, int width, bo
 				}
                                 myGameStateMachine = new GameStateMachine();
                                 myGameStateMachine->changeState(new MenuState());
-				myGameObjectList.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
-				myGameObjectList.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
+				//myGameObjectList.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
+				//myGameObjectList.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
 			}else{
 				std::cout<<"render init fail\n";
 				return false;

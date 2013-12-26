@@ -126,4 +126,10 @@ bool InputHandler::isKeyDown(SDL_Scancode key)
 	return false;
 }
 
+void InputHandler::reset()
+{
+    myMouseButtonStates[LEFT] = false;
+    myMouseButtonStates[MIDDLE] = false;
+    myMouseButtonStates[RIGHT] = false;
+}
 

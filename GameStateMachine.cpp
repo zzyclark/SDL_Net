@@ -40,8 +40,24 @@ void GameStateMachine::changeState(GameState* pState)
 			delete myGameSates.back();
 			myGameSates.pop_back();
 		}
-
 	}
-        myGameSates.push_back(pState);
+
+	myGameSates.push_back(pState);
 	myGameSates.back()->onEnter();
+}
+
+void GameStateMachine::update()
+{
+	if(!myGameSates.empty())
+	{
+		myGameSates.back()->update();
+	}
+}
+
+void GameStateMachine::render()
+{
+	if(!myGameSates.empty())
+	{
+		myGameSates.back()->render();
+	}
 }

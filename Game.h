@@ -38,6 +38,7 @@ public:
 	bool running();
 	void quit(){myRunning = false;};
 	SDL_Renderer* getRenderer() const {return myRenderer;};
+        GameStateMachine* getStateMachine() {return myGameStateMachine;};
 
 private:
 

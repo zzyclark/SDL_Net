@@ -43,7 +43,7 @@ bool Game::init(const char* title, int xpos, int ypos, int height, int width, bo
 			if(myRenderer != NULL)
 			{
 				std::cout<<"render init success\n";
-				SDL_SetRenderDrawColor(myRenderer, 255, 0, 0, 255);
+				SDL_SetRenderDrawColor(myRenderer, 0, 0, 0, 255);
 				if(!MyTextureManager::Instance()->load("assets/animate-alpha.png", "animate", myRenderer))
 				{
 					return false;
@@ -74,10 +74,7 @@ void Game::render()
 {
 	//clear render to the draw color
 	SDL_RenderClear(myRenderer);
-	for (size_t i = 0; i < myGameObjectList.size(); i++)
-	{
-		myGameObjectList[i]->draw();
-	}
+	myGameStateMachine->render();
 	//draw to the screen
 	SDL_RenderPresent(myRenderer);
 }
@@ -89,19 +86,12 @@ bool Game::running()
 
 void Game::update()
 {
-	for (size_t i = 0; i < myGameObjectList.size(); i++)
-	{
-		myGameObjectList[i]->update();
-	}
+    myGameStateMachine->update();
 }
 
 void Game::handleEvents()
 {
 	MyInputHandler::Instance()->update();
-        if (MyInputHandler::Instance()->isKeyDown(SDL_SCANCODE_RETURN)) 
-        {
-            myGameStateMachine->changeState(new PlayState());
-        }
 }
 
 void Game::clean()

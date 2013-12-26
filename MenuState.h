@@ -8,6 +8,10 @@
 #pragma once	
 
 #include "GameState.h"
+#include "GameObject.h"
+#include <vector>
+#include "TextureManager.h"
+
 class MenuState : public GameState
 {
 public:
@@ -21,5 +25,7 @@ public:
 
 private:
 	static const std::string myMenuID;
+	std::vector<GameObject*> myGameObjects;
+	static void s_menuToPlay();
+	static void s_exitFromMenu();
 };
-

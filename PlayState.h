@@ -7,7 +7,10 @@
 
 #pragma once
 #include "GameState.h"
+#include "GameObject.h"
 #include <string>
+#include <vector>
+
 class PlayState : public GameState
 {
 public:
@@ -20,4 +23,5 @@ public:
 	virtual std::string getStateID() const{return myPlayID;};
 private:
 	static const std::string myPlayID;
+	std::vector<GameObject*> myGameObjects;
 };

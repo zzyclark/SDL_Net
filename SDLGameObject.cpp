@@ -21,7 +21,13 @@ SDLGameObject::SDLGameObject(const LoaderParams* myParams):GameObject(myParams),
 
 void SDLGameObject::draw()
 {
-	MyTextureManager::Instance()->drawframe(m_textureID, (int)m_position.getX(), (int)m_position.getY(), m_width, m_height, m_currentRow, m_currentFrame, MyGame::Instance()->getRenderer());
+	if (m_velocity.getX() > 0)
+	{
+		MyTextureManager::Instance()->drawframe(m_textureID, (Uint32)m_position.getX(), (Uint32)m_position.getY(), m_width, m_height, m_currentRow, m_currentFrame, MyGame::Instance()->getRenderer(), SDL_FLIP_HORIZONTAL);
+	}else
+	{
+		MyTextureManager::Instance()->drawframe(m_textureID, (int)m_position.getX(), (int)m_position.getY(), m_width, m_height, m_currentRow, m_currentFrame, MyGame::Instance()->getRenderer());
+	}
 }
 
 void SDLGameObject::clean()
@@ -54,28 +60,9 @@ void Player::clean()
 
 void Player::hanleInput()
 {
-	/*if(MyInputHandler::Instance()->getMouseButtonState(LEFT))
-	{
-		m_velocity.setX(1);
-	}*/
-	if(MyInputHandler::Instance()->isKeyDown(SDL_SCANCODE_RIGHT))
-	{
-		m_velocity.setX(2);
-	}
-	if(MyInputHandler::Instance()->isKeyDown(SDL_SCANCODE_LEFT))
-	{
-		m_velocity.setX(-2);
-	}
-	if(MyInputHandler::Instance()->isKeyDown(SDL_SCANCODE_UP))
-	{
-		m_velocity.setY(-2);
-	}
-	if(MyInputHandler::Instance()->isKeyDown(SDL_SCANCODE_DOWN))
-	{
-		m_velocity.setY(2);
-	}
-	//Vector2D* vec = MyInputHandler::Instance()->getMousePosition();
-	//m_velocity = (*vec - m_position) / 100;
+	Vector2D* target = MyInputHandler::Instance()->getMousePosition();
+	m_velocity = *target - m_position;
+	m_velocity /= 50;
 }
 
 Enemy::Enemy(const LoaderParams* myParams):SDLGameObject(myParams)

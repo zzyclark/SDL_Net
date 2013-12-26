@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=sdl_release
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/sdl_release
+CND_ARTIFACT_NAME_Debug=sdl_net
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/sdl_net
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=sdlrelease.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/sdlrelease.tar
+CND_PACKAGE_NAME_Debug=sdlnet.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/sdlnet.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=sdl_release
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/sdl_release
+CND_ARTIFACT_NAME_Release=sdl_net
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/sdl_net
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=sdlrelease.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/sdlrelease.tar
+CND_PACKAGE_NAME_Release=sdlnet.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/sdlnet.tar
 #
 # include compiler specific variables
 #

@@ -35,13 +35,17 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/AnimatedGraphic.o \
+	${OBJECTDIR}/Enemy.o \
 	${OBJECTDIR}/Game.o \
+	${OBJECTDIR}/GameOverState.o \
 	${OBJECTDIR}/GameStateMachine.o \
 	${OBJECTDIR}/InputHandler.o \
 	${OBJECTDIR}/MenuButton.o \
 	${OBJECTDIR}/MenuState.o \
 	${OBJECTDIR}/PauseState.o \
 	${OBJECTDIR}/PlayState.o \
+	${OBJECTDIR}/Player.o \
 	${OBJECTDIR}/SDLGameObject.o \
 	${OBJECTDIR}/TextureManager.o \
 	${OBJECTDIR}/main.o
@@ -71,10 +75,25 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sdl_net: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sdl_net ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/AnimatedGraphic.o: AnimatedGraphic.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AnimatedGraphic.o AnimatedGraphic.cpp
+
+${OBJECTDIR}/Enemy.o: Enemy.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Enemy.o Enemy.cpp
+
 ${OBJECTDIR}/Game.o: Game.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Game.o Game.cpp
+
+${OBJECTDIR}/GameOverState.o: GameOverState.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GameOverState.o GameOverState.cpp
 
 ${OBJECTDIR}/GameStateMachine.o: GameStateMachine.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -105,6 +124,11 @@ ${OBJECTDIR}/PlayState.o: PlayState.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PlayState.o PlayState.cpp
+
+${OBJECTDIR}/Player.o: Player.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Player.o Player.cpp
 
 ${OBJECTDIR}/SDLGameObject.o: SDLGameObject.cpp 
 	${MKDIR} -p ${OBJECTDIR}

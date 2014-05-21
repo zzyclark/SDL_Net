@@ -2,26 +2,23 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
         <activeConfTypeElem>1</activeConfTypeElem>
-        <activeConfIndexElem>1</activeConfIndexElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/MenuState.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/PlayState.h</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/Game.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/InputHandler.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/GameStateMachine.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/Game.h</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/PlayState.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/MenuButton.h</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/GameStateMachine.h</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/InputHandler.h</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/TextureManager.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/TextureManager.h</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/SDLGameObject.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/MenuButton.cpp</file>
-            <file>file:/home/clark/NetBeansProjects/SDL_Net/MenuState.h</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/SDLGameObject.cpp</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/AnimatedGraphic.cpp</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/Player.cpp</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/AnimatedGraphic.h</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/PauseState.h</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/Game.h</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/GameState.h</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/TextureManager.cpp</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/MenuState.cpp</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/GameObject.h</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/PlayState.cpp</file>
+            <file>file:/home/omnitoons/NetBeansProjects/SDL_Net/SDLGameObject.h</file>
         </group>
     </open-files>
 </project-private>

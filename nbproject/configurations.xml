@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="90">
+<configurationDescriptor version="94">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>AnimatedGraphic.h</itemPath>
       <itemPath>Game.h</itemPath>
       <itemPath>GameObject.h</itemPath>
+      <itemPath>GameOverState.h</itemPath>
       <itemPath>GameState.h</itemPath>
       <itemPath>GameStateMachine.h</itemPath>
       <itemPath>InputHandler.h</itemPath>
@@ -25,13 +27,17 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>AnimatedGraphic.cpp</itemPath>
+      <itemPath>Enemy.cpp</itemPath>
       <itemPath>Game.cpp</itemPath>
+      <itemPath>GameOverState.cpp</itemPath>
       <itemPath>GameStateMachine.cpp</itemPath>
       <itemPath>InputHandler.cpp</itemPath>
       <itemPath>MenuButton.cpp</itemPath>
       <itemPath>MenuState.cpp</itemPath>
       <itemPath>PauseState.cpp</itemPath>
       <itemPath>PlayState.cpp</itemPath>
+      <itemPath>Player.cpp</itemPath>
       <itemPath>SDLGameObject.cpp</itemPath>
       <itemPath>TextureManager.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -64,11 +70,21 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="AnimatedGraphic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AnimatedGraphic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enemy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Game.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Game.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="GameObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GameOverState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameOverState.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="GameState.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -97,6 +113,8 @@
       <item path="PlayState.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PlayState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Player.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SDLGameObject.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -137,11 +155,21 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="AnimatedGraphic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AnimatedGraphic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enemy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Game.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Game.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="GameObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GameOverState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameOverState.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="GameState.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -170,6 +198,8 @@
       <item path="PlayState.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PlayState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Player.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SDLGameObject.cpp" ex="false" tool="1" flavor2="0">
       </item>

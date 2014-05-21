@@ -8,7 +8,6 @@
 #pragma once
 #include "Vector2D.h"
 #include "GameObject.h"
-#include "Game.h"
 #include "TextureManager.h"
 //#include "InputHandler.h"
 
@@ -20,7 +19,11 @@ public:
 	virtual void draw();
 	virtual void update();
 	virtual void clean();
-
+        
+        Vector2D getPosition(){return m_position;};
+        int getHeight() const{return m_height;};
+        int getWidth() const{return m_width;};
+        
 protected:
 	Vector2D m_position;
 	Vector2D m_velocity;
@@ -31,6 +34,7 @@ protected:
 
 	int m_currentRow;
 	int m_currentFrame;
+        int m_numFrame;
 
 	std::string m_textureID;
 };

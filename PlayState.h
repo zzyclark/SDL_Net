@@ -7,7 +7,7 @@
 
 #pragma once
 #include "GameState.h"
-#include "GameObject.h"
+#include "SDLGameObject.h"
 #include <string>
 #include <vector>
 
@@ -21,6 +21,8 @@ public:
 	virtual bool onExit();
 
 	virtual std::string getStateID() const{return myPlayID;};
+        
+        bool checkCollision(SDLGameObject* p1, SDLGameObject* p2);
 private:
 	static const std::string myPlayID;
 	std::vector<GameObject*> myGameObjects;

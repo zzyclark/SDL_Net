@@ -21,10 +21,7 @@ public:
 	virtual std::string getStateID() const = 0;
 protected:
     
-    GameState() : m_loadingComplete(false), m_exiting(false)
-    {
-        
-    }
+    GameState() : m_loadingComplete(false), m_exiting(false){};
     
     bool m_loadingComplete;
     bool m_exiting;

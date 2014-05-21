@@ -6,6 +6,7 @@
  */
 
 #include "MenuButton.h"
+#include "InputHandler.h"
 
 
 MenuButton::MenuButton(const LoaderParams* myParams, void (*callback)()) : SDLGameObject(myParams), m_callback(callback)

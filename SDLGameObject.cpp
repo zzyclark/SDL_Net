@@ -6,7 +6,7 @@
  */
 
 #include "SDLGameObject.h"
-
+#include "Game.h"
 
 
 SDLGameObject::SDLGameObject(const LoaderParams* myParams):GameObject(myParams), m_position(myParams->getX(), myParams->getY()), m_velocity(0, 0), m_acceleration(0, 0)
@@ -38,49 +38,4 @@ void SDLGameObject::update()
 {
 	m_velocity += m_acceleration;
 	m_position += m_velocity;	
-}
-
-Player::Player(const LoaderParams* myParams) : SDLGameObject(myParams)
-{
-}
-
-void Player::draw()
-{
-	SDLGameObject::draw(); 
-}
-void Player::update()
-{
-	hanleInput();
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
-	SDLGameObject::update();
-}
-void Player::clean()
-{
-}
-
-void Player::hanleInput()
-{
-	Vector2D* target = MyInputHandler::Instance()->getMousePosition();
-	m_velocity = *target - m_position;
-	m_velocity /= 50;
-}
-
-Enemy::Enemy(const LoaderParams* myParams):SDLGameObject(myParams)
-{
-}
-
-void Enemy::draw()
-{
-	SDLGameObject::draw();
-}
-
-void Enemy::update()
-{
-	m_position.setX(m_position.getX() + 1);
-	m_position.setY(m_position.getY() + 1);
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
-}
-
-void Enemy::clean()
-{
 }
